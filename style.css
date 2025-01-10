@@ -1,15 +1,16 @@
 p{
-    color:rgb(255, 22, 5);
+    color: white;
     text-align: center;
     font-family:'Times New Roman';
 }
 header{
     position: sticky;
     top: 0px;
-    color: red;
     background-color: black;
-    background-image: url(background.jpg);
+    color: red;
+    background-image: url(black.jpeg);
     background-size:cover;
+    width: 100vw;
     }
     nav{
         font-weight: bold;
@@ -21,43 +22,52 @@ header{
 .image{
     display: grid;
     place-items: center;
-    /* background-image: url(background.jpg); */
-    background-size:cover;
     height: 80vh;
-    width: 95vw;
+    width: 100vw;
+    background-image: url(black.jpeg);
+    background-size: cover;
 }
 @media (min-width : 600px) {
     .image{
-        width:99vw;
+        width:100vw;
     }
     }
 .education{
-    background-color: black;
-    color: white;
+    color:red;
+    font-size: large;
+    height: 85vh;
+    width: 100vw;
 }
 .family{
-    background-color: rgb(232, 190, 238);
-    color: rgb(34, 27, 133);
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: rgb(214, 239, 248);
+    font-weight: bolder;
 }
 table{
-    color:rgb(241, 236, 232);
-    background-color:rgb(64, 94, 226);
+    color:white;
+    background-color:black;
     display: grid;
     place-items: center;
+    border: 4px solid red;
+    margin-bottom: 40px;
 }
 div{
-    background-color: black;
-    color: white;
+    color: red;
     font-size: large;
 }
 .friends{
-    background-color: grey;
-    color: rgb(8, 231, 247);
+    color: red;
 }
 span{
-    background-color:rgb(11, 245, 89);
-    color: rgb(182, 102, 48);
+    height: 40px;
+    background-color: red;
+    color: white;
     font-size: x-large;
+    border: 4px solid black;
+    position: absolute;
+    left: 90px;
 }
 footer{
     background-color: black;
@@ -72,4 +82,10 @@ footer{
 a{
     color: white;
     text-decoration: none;
+}
+
+figure{
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
