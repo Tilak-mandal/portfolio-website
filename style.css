@@ -8,10 +8,10 @@ header{
     top: 0px;
     background-color: black;
     color: red;
-    background-image: url(black.jpeg);
-    background-size:cover;
     width: 100vw;
     }
+
+    
     nav{
         font-weight: bold;
         color: white;
@@ -19,13 +19,15 @@ header{
         display: flex;
         justify-content: space-evenly;
     }
+
 .image{
     display: grid;
     place-items: center;
     height: 80vh;
     width: 100vw;
-    background-image: url(black.jpeg);
+    /* background-image: url(black.jpeg); */
     background-size: cover;
+    background-color: black;
 }
 @media (min-width : 600px) {
     .image{
@@ -70,22 +72,49 @@ span{
     left: 90px;
 }
 footer{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
+    display: grid;
+    justify-content: center;
+    font-weight: bolder;
+    border: 2px solid red;
 }
 .message{
     font-size: x-large;
 }
+
 .contact{
-    background-color: aquamarine;
+    background-color: black;
+    color: white;
 }
 a{
     color: white;
     text-decoration: none;
 }
 
+a:hover{
+    background-color: blue;
+}
+
 figure{
     display: grid;
     justify-content: center;
     align-items: center;
+}
+
+.welcome{
+    animation: animate 3s ease-in 0s infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: translate(75vw);
+        color: white;
+    }
+    50%{
+        color: pink;
+    }
+    100%{
+        color: red;
+    }
 }
